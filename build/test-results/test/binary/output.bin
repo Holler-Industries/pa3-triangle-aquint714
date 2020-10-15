@@ -1,0 +1,8 @@
+YChecking if constructing with no parameters yields correct triangle coordinates - passed
+-testing area of degenerate triangle - passed
+.testing area of basic right triangle - passed
+2testing perimeter of degenerate triangle - passed
+3testing perimeter of basic right triangle - passed
+testing translateX - passed
+testing translateY - passed
+	ZChecking that parameters correspond to correct instance variables in constructor - passed

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.TestTriangle" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-14T15:02:51" hostname="wintermute" time="0.057">
+  <properties/>
+  <testcase name="testNullConstructor()" classname="com.example.project.TestTriangle" time="0.032"/>
+  <testcase name="testNullArea()" classname="com.example.project.TestTriangle" time="0.003"/>
+  <testcase name="testArea()" classname="com.example.project.TestTriangle" time="0.002"/>
+  <testcase name="testNullPerimeter()" classname="com.example.project.TestTriangle" time="0.003"/>
+  <testcase name="testPerimeter()" classname="com.example.project.TestTriangle" time="0.002"/>
+  <testcase name="testTranslateX()" classname="com.example.project.TestTriangle" time="0.002"/>
+  <testcase name="testTranslateY()" classname="com.example.project.TestTriangle" time="0.002"/>
+  <testcase name="testDefaultConstructor()" classname="com.example.project.TestTriangle" time="0.003"/>
+  <system-out><![CDATA[Checking if constructing with no parameters yields correct triangle coordinates - passed
+testing area of degenerate triangle - passed
+testing area of basic right triangle - passed
+testing perimeter of degenerate triangle - passed
+testing perimeter of basic right triangle - passed
+testing translateX - passed
+testing translateY - passed
+Checking that parameters correspond to correct instance variables in constructor - passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
