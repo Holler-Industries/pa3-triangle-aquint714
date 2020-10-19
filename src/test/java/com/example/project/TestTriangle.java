@@ -177,4 +177,43 @@ public class TestTriangle {
             throw e;
         }
     }
+
+    @Test
+    public void testAngle() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(3.017, myTriangle.angle(0), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testAngle1() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(0.069, myTriangle.angle(1), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testAngle2() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(0.055, myTriangle.angle(2), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
 }

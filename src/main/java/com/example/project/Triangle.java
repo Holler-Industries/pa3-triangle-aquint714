@@ -99,4 +99,35 @@ public class Triangle {
         return distance;
     }
 
+    public double angle(int point){
+        double cos;
+        double distance1 = Math.pow(x1-x0,2)+Math.pow(y1-y0,2);
+        distance1 = Math.sqrt(distance1);
+        double distance2 = Math.pow(x2-x1,2)+Math.pow(y2-y1,2);
+        distance2 = Math.sqrt(distance2);
+        double distance3 = Math.pow(x0 - x2, 2) + Math.pow(y0 - y2, 2);
+        distance3 = Math.sqrt(distance3);
+        double a2 = Math.pow(distance2,2);
+        double b2 = Math.pow(distance3,2);
+        double c2 = Math.pow(distance1,2);
+        if (point == 0){
+            double numerator = b2 + c2 - a2;
+            double denominator = 2*distance3*distance1;
+            cos = numerator/denominator;
+            cos = Math.acos(cos);
+        }
+        else if (point == 1){
+            double numerator = a2 + c2 - b2;
+            double denominator = 2*distance2*distance1;
+            cos = numerator/denominator;
+            cos = Math.acos(cos);
+        }
+        else{
+            double numerator = a2 + b2 - c2;
+            double denominator = 2*distance2*distance3;
+            cos = numerator/denominator;
+            cos = Math.acos(cos);
+        }
+        return cos;
+    }
 }
