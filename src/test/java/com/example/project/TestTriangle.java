@@ -137,4 +137,83 @@ public class TestTriangle {
         }
     }
 
+    @Test
+    public void testLength() {
+        String description = "testing length of one given side of a triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(8.062258, myTriangle.length(1, 2), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e){
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testLength2() {
+        String description = "testing length of one given side of a triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(4.47214, myTriangle.length(0, 2), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e){
+            System.out.println(description + " - failed");
+            throw e;
+        }
+
+
+    }
+
+    @Test
+    public void testLength3() {
+        String description = "testing length of one given side of a triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(3.6056, myTriangle.length(0, 1), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testAngle() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(3.017, myTriangle.angle(0), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testAngle1() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(0.069, myTriangle.angle(1), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
+
+    @Test
+    public void testAngle2() {
+        String description = "testing angle of triangle";
+        try {
+            Triangle myTriangle = new Triangle(4, 5, 6, 8, 2, 1);
+            assertEquals(0.055, myTriangle.angle(2), 0.01);
+            System.out.println(description + " - passed");
+        } catch (AssertionError e) {
+            System.out.println(description + " - failed");
+            throw e;
+        }
+    }
 }
